@@ -1,4 +1,4 @@
-package com.github.ozelahmet.mockito;
+package com.github.ozelahmet.mockito.user;
 
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;

@@ -1,4 +1,4 @@
-package com.github.ozelahmet.mockito;
+package com.github.ozelahmet.mockito.user;
 
 /**
  * This annotation can be added to prevent this class to be mocked. In order to do this, in <code>build.gradle</code>,

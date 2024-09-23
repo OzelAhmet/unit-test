@@ -1,4 +1,4 @@
-package com.github.ozelahmet.mockito;
+package com.github.ozelahmet.mockito.user;
 
 public class UserService {
 
