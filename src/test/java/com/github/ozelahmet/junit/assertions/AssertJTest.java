@@ -157,4 +157,18 @@ public class AssertJTest extends Assertions {
         assertThat(integerList).isInstanceOf(List.class);
     }
 
+    @Test
+    void additionalAssertions() {
+        assertThat("Text").isEqualToIgnoringCase("tEXT");
+
+        assertThat(List.of(1, 2))
+                .hasSize(2)
+                .contains(1)
+                .doesNotContainNull()
+                .containsSequence(1, 2);
+
+        assertThat(List.of("", "a", "aa"))
+                .filteredOn(s -> s.length() > 1)
+                .doesNotContain("", "a");
+    }
 }
