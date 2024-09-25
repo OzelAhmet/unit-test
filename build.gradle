@@ -5,6 +5,11 @@ plugins {
 group = 'com.github.ozelahmet'
 version = '1.0-SNAPSHOT'
 
+java {
+    sourceCompatibility = JavaVersion.VERSION_21
+    targetCompatibility = JavaVersion.VERSION_21
+}
+
 repositories {
     mavenCentral()
 }
@@ -13,6 +18,7 @@ dependencies {
     testImplementation platform('org.junit:junit-bom:5.11.0')
     testImplementation 'org.junit.jupiter:junit-jupiter'
     testImplementation 'org.assertj:assertj-core:3.26.3'
+    testImplementation 'org.hamcrest:hamcrest:3.0'
     testImplementation 'org.mockito:mockito-core:5.13.0'
     testImplementation 'org.mockito:mockito-junit-jupiter:5.13.0'
 }
